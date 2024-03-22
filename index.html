@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>home-page</title>
+    <style>
+        
+*{
+    margin : 0 ;
+    padding: 0 ;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    height: 1000px;
+}
+.nav-left{
+    width: 100px;
+    height: 25px;
+    border: 2px solid black;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+.nav-right{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    margin-left: 40px;
+    padding: 10px;
+}
+.img-nav{
+    background-image: url(img-nav.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 40px;
+    transition: all 1s 1s;
+}
+.text-nav-img{
+   position: absolute;
+   right: 0.8%;
+   top: 83%;
+   font-size: 40px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-weight: 900;
+   color: wheat;
+}
+.demo1-nav-img{
+    border-radius: 50%;
+    border: 4px solid wheat;
+    position: absolute;
+    left: 2%;
+    top: 94%;
+}
+.demo2-nav-img{
+    border-radius: 50%;
+    border: 4px solid wheat;
+    position: absolute;
+    left: 3%;
+    top: 94%;
+}
+.demo3-nav-img{
+    border-radius: 50%;
+    border: 4px solid wheat;
+    position: absolute;
+    left: 4%;
+    top: 94%;
+}
+.demo:hover{
+    border: 5px solid red;
+}
+.text-nav-img:hover {
+    color: aqua;
+}
+.img-nav:hover{
+    background-image: url(img-nav2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.h{
+    width: 250px;
+    height: 492px;
+    box-shadow: 0 1px 12px 0 rgb(0 0 0 / 15%);
+    position: absolute;
+    top: 500px;
+    left: 60px;
+    border-radius: 4px;
+}
+.h:hover{
+    box-shadow: 0 1px 20px 12px rgb(0 0 0 / 15%);
+}
+.hed1{
+    background-image: url(hed1.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.harag{
+    width: 45px;
+    height: 22px;
+    background-color: #0089ff;
+    position: absolute;
+    right: 0px;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 40%;
+    text-align: center;
+    line-height: 22px;
+    color: #fff;
+}
+.textes{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 17px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+.t1{
+    color: #0089ff;
+    background-color: #e8f3fe;
+    font-size: 12px;
+    border-radius: 4%;
+    padding: 0 4px;
+    font-weight: 500;
+    position: absolute;
+    right: 30px;
+    top: 60%;
+    width: 10%;
+    height: 20px;
+    line-height: 20px;
+}
+.t2{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ccc;
+    position: absolute;
+    right: 65px;
+    top: 60.3%;
+}
+.t3{
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: 70%;
+    right: 30px;
+}
+.t4{
+    font-weight: 200;
+    font-size: 15px;
+    position: absolute;
+    top: 70.5%;
+    right: 110px;
+}
+.t5{
+    color: #41bd64;
+    background-color: #e4ffeb;
+    position: absolute;
+    bottom: 72px;
+    right: 15px;
+    font-weight: bold;
+}
+.t6{
+    color: #da1e27;
+    background-color: #ffeaeb;
+    position: absolute;
+    bottom: 72px;
+    left: 15px;
+}
+.hed2{
+    left: 400px;
+    background-image: url(hed2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.hed3{
+    left: 740px;
+    background-image: url(hed3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.hed4{
+    left: 1070px;
+    background-image: url(hed4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.textes{
+    top: 53%;
+}
+.box{
+    width: 70%;
+    height: 300px;
+    position: absolute;
+    bottom: -830px;
+    right: 20px;
+    border: 5px ridge gray;
+}
+.lorem1{
+    width: 135px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: red;
+    color: wheat;
+    text-align: center;
+    padding: 7px;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.lorem2{
+    position: absolute;
+    left: 35%;
+    top: 55px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+}
+.lorem3{
+    width: 135px;
+    height: 40px;
+    position: absolute;
+    top: 45px;
+    left: 15%;
+    background-color: red;
+    color: wheat;
+    text-align: center;
+    padding: 7px;
+    border-radius: 60%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+}
+.lorem4{
+    position: absolute;
+    left: 20%;
+    top: 100px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 19px;
+    font-weight: bold;
+}
+.hr{
+    width: 550px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+.lorem5{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-weight: 800;
+    position: absolute;
+    top: 55%;
+    left: 30%;
+}
+.lorem6{
+    position: absolute;
+    top: 67%;
+    left: 28%;
+    font-size: 14px;
+}
+.img-box{
+    width: 230px;
+    height: 230px;
+    background-image: url(box-img.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: -1000%;
+    right: 40px;
+    top: 50%;
+    transform: translate(0 , -50%);
+}
+.ofe{
+transition: 1s;
+
+}
+.a{
+transition: 1s;
+}
+.of-img{
+    width: 270px;
+    height: 390px;
+    background-image: url(of.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 1064px;
+    right: 1013px;
+}
+.of2-img{
+    width: 270px;
+    height: 390px;
+    background-image: url(of2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 1064px;
+    right: 1013px;
+    opacity: 0;
+}
+.ofer{
+    width: 1000px;
+    height: 120px;
+    background-image: url(ofer2.webp);
+    background-position: 100%;
+    
+    position: absolute;
+    top: 1020px;
+    left: 350px;
+}
+.ofe:hover > .of2-img{
+opacity: 1;
+}
+.hanz{
+    width: 250px;
+    height: 492px;
+    box-shadow: 0 1px 12px 0 rgb(0 0 0 / 15%);
+    position: absolute;
+    top: 1500px;
+    left: 60px;
+    border-radius: 4px;
+}
+.hanz:Hover{
+    box-shadow: 0 1px 20px 12px rgb(0 0 0 / 15%);
+}   
+.h1{
+    background-image: url(hanz.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.of{
+  width: 45px;
+  height: 22px;
+  background-color: #0089ff;
+  position: absolute;
+  right: 0px;
+  border-top-left-radius: 25%;
+  border-bottom-left-radius: 40%;
+  text-align: center;
+  line-height: 22px;
+  color: #fff;
+}
+.span1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 17px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+.g1{
+    color: #0089ff;
+    background-color: #e8f3fe;
+    font-size: 12px;
+    border-radius: 4%;
+    padding: 0 4px;
+    font-weight: 500;
+    position: absolute;
+    right: 30px;
+    top: 60%;
+    width: 10%;
+    height: 20px;
+    line-height: 20px;
+}
+.gg1{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ccc;
+    position: absolute;
+    right: 65px;
+    top: 60.3%;
+}
+.ggg1{
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: 70%;
+    right: 30px;
+}
+.gggg1{
+    font-weight: 200;
+    font-size: 15px;
+    position: absolute;
+    top: 70.5%;
+    right: 110px;
+}
+.ggggg1{
+    color: #41bd64;
+    background-color: #e4ffeb;
+    position: absolute;
+    bottom: 72px;
+    right: 15px;
+    font-weight: bold;
+}
+.gggggg1{
+    color: #da1e27;
+    background-color: #ffeaeb;
+    position: absolute;
+    bottom: 72px;
+    left: 15px;
+}
+.h2{
+    left: 400px;
+    background-image: url(hanz1.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.h3{
+    left: 740px;
+    background-image: url(hanz2.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.h4{
+    left: 1070px;
+    background-image: url(hanz3.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.gggggg4{
+    color: wheat;
+    background-color: rgba(128, 128, 128, 0.836);
+    position: absolute;
+    bottom: 72px;
+    left: 15px;
+}
+.img{
+    position: absolute;
+    top: 1000px;
+    left: 666px;
+}
+.img2{
+    position: absolute;
+    top: 1000px;
+    left: 387px;
+}
+.footer{
+    width: 100%;
+    position: absolute;
+    top: 2023px;
+    padding: 40px;
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    right: 40px;
+}
+svg{
+    width: 20px;
+    height: 20px;
+}
+.top-footer{
+    width: 100%;
+    height: 190px;
+    background-color: #636e72;
+    position: absolute;
+    top: 30px;
+}
+.right-top{
+    text-align: right;
+    margin: 12px 12px 12px 12px;
+}
+.about{ 
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    top: 18px;
+    right: 30px;
+}
+.lorem-parsi{
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    width: 50%;
+    font-size: 17px;
+}
+.left-top{
+   position: absolute;
+   left: 150px;
+   top: 70px; 
+}
+.follow{
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
+}
+.logoe{
+    position: absolute;
+    top: 40px;
+}
+.z{
+  margin-bottom: -2px;  
+}
+.bottom-footer{
+    width: 100%;
+    height: 50px;
+    background-color: #2d3436;
+    position: absolute;
+    top: 2200px;
+}
+.copyright{
+    text-align: center;
+    line-height: 60px;
+    color: whitesmoke;
+}
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav-left"> 
+        <i class="fa fa-home"></i>
+       
+       <span class="title-login-btn">ورود | ثبت نام</span>
+          </div>
+          <div class="nav-right">
+            <div id="login-cart-search" class="login-cart-search">
+                <span id="react-root-login"><span><button data-testid="account-icon" class="css-10lf4kz"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><path d="M11.3 9.75c-1.87-.41-3.58-.81-2.77-2.36C11.05 2.6 9.18 0 6.5 0S2 2.68 4.47 7.39c.9 1.61-.89 1.95-2.76 2.36S.12 11 0 13h13c-.14-2 .17-2.76-1.7-3.25z" class="css-vnkmur"></path></svg></button></span></span>
+                 <a id="basketLink-legacy" class="cart-link popover-link" data-title="SHOPPING CART" href="/en/shop/cart/" style="">
+                    <span class="cart-link-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13">
+                            <path class="icon-cart" d="M4.58 9L2.11 1.64H.59L0 0h3.31l1.58 4.09H15L12.68 9h-8.1z"></path>
+                            <ellipse class="icon-cart" cx="10.45" cy="11.5" rx="1.45" ry="1.5"></ellipse>
+                            <ellipse class="icon-cart" cx="6.45" cy="11.5" rx="1.45" ry="1.5"></ellipse>
+                        </svg>
+                        <span id="cartAmount" class="cart-link-amount bubble" style="display: none;">0</span>
+                    </span>
+                </a>
+            
+                <!-- mobile search link -->
+                <a href="/en/catalog/" class="search-link close-popovers" style="">
+                    <span class="search-link-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                            <path class="icon-search" d="M13 11.67L9.06 7.73A4.84 4.84 0 0 0 10 5a5 5 0 0 0-5-5 5 5 0 0 0-5 5 5 5 0 0 0 5 5 4.88 4.88 0 0 0 2.72-.94L11.67 13zM2 5a3 3 0 1 1 3 3 3 3 0 0 1-3-3z"></path>
+                        </svg>
+                    </span>
+                    <span class="search-link-text"></span>
+                </a>
+            
+                <!-- desktop dropdown search -->
+                <a href="/en/catalog/" id="search-link-desktop" class="search-link-desktop popover-link" style="" data-original-title="" title="">
+                    <span class="search-link-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                            <path class="icon-search" d="M13 11.67L9.06 7.73A4.84 4.84 0 0 0 10 5a5 5 0 0 0-5-5 5 5 0 0 0-5 5 5 5 0 0 0 5 5 4.88 4.88 0 0 0 2.72-.94L11.67 13zM2 5a3 3 0 1 1 3 3 3 3 0 0 1-3-3z"></path>
+                        </svg>
+                    </span>
+                </a>
+            
+                <div style="display:none;">
+                    <div id="top-search-dropdown" class="search-dropdown">
+                        <form class="form">
+                            <div class="form-group">
+                                <input id="search-box" class="form-control search-box" type="search" data-provide="typeahead" autocomplete="off" placeholder="Product Search" data-noresulttext="No results found" data-moretext="Show more results" data-moreurl="/en/catalog/">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            
+            </div>
+            </div>
+                    <div class="img-nav">
+                        <div class="text-nav-img">انواع هنزفیری و هدست </div>
+                        <div class="demo demo1-nav-img"></div>
+                        <div class="demo demo2-nav-img"></div>
+                        <div class="demo demo3-nav-img"></div>
+                    </div>
+                              <div class="h hed1"><div class="harag">حراج</div><div class="textes">WH3 هدست سامسونگ مدل</div><div class="t1">8%</div><div class="t2"><del>2,500,000</del></div><div class="t3">2,300,000</div><div class="t4">تومان</div><div class="t5">ارسال رایگان</div><div class="t6">موجودی:3</div></div>
+                              <div class="h hed2"><div class="harag">حراج</div><div class="textes">RGS52 هدست تکسو مدل </div><div class="t1">12%</div><div class="t2"><del>780,000</del></div><div class="t3">690,000</div><div class="t4">تومان</div><div class="t5">ارسال رایگان</div><div class="t6">موجودی:12</div></div>
+                              <div class="h hed3"><div class="harag">حراج</div><div class="textes">SSD2 هدست ایسوس مدل</div><div class="t1">60%</div><div class="t2"><del>5,700,000</del></div><div class="t3">1,710,000</div><div class="t4">تومان</div><div class="t5">ارسال رایگان</div><div class="t6">موجودی:4</div></div>
+                              <div class="h hed4"><div class="harag">حراج</div><div class="textes">TTs one هدست اپل مدل</div><div class="t1">30%</div><div class="t2"><del>3,300,000</del></div><div class="t3">2,310,000</div><div class="t4">تومان</div><div class="t5">ارسال رایگان</div><div class="t6">موجودی:7</div></div>
+    
+                              <div class="box">
+                                        <div class="lorem1">پیشنهاد شگفت انگیز </div>
+                                            <div class="lorem2">قیمت:1 میلیون تومان</div>
+                                                <div class="lorem3">تا 50% تخفیف</div>
+                                                    <div class="lorem4">strix هدست ایسوس مدل</div>
+                                                        <div class="lorem5">19 : 6 : 35</div>
+                                                            <div class="lorem6">زمان باقی مانده تا پایان سفارش</div>
+                                                                <div class="hr"></div>
+                                                                    <div class="img-box"></div>
+                                                                </div> 
+                                                 <div class="ofe"> 
+                                                <div class="a of-img"></div>
+                                                <div class="a of2-img"></div>
+                                                <div class="a ofer"></div>
+                                                </div>
+
+                                <div class="hanz h1"><div class="of">حراج</div><div class="span1"><span>S100 هنزفیری ریو مدل </span></div><div class="g1">9%</div><div class="gg1"><del>1,850,000</del></div><div class="ggg1">1,650,000</div><div class="gggg1">تومان</div><div class="ggggg1">ارسال رایگان </div><div class="gggggg1">1:موجودی</div></div>
+                                <div class="hanz h2"><div class="of">حراج</div><div class="span1"><span>THD78 هنزفیری تسکو مدل</span></div><div class="g1">20%</div><div class="gg1"><del>1,200,000</del></div><div class="ggg1">960,000</div><div class="gggg1">تومان</div><div class="ggggg1">ارسال رایگان </div><div class="gggggg1">موجودی:6</div></div>
+                                <div class="hanz h3"><div class="of">حراج</div><div class="span1"><span>SLE99 هنزفیری ریو مدل</span></div><div class="g1">10%</div><div class="gg1"><del>1,100,000</del></div><div class="ggg1">1,000,000</div><div class="gggg1">تومان</div><div class="ggggg1">ارسال رایگان </div><div class="gggggg1">موجودی:3</div></div>
+                                <div class="hanz h4"><div class="of">حراج</div><div class="span1"><span>DNLL55 هنزفیری تسکو مدل</span></div><div class="g1">50%</div><div class="gg1"><del>2,500,000</del></div><div class="ggg1">1,250,000</div><div class="gggg1">تومان</div><div class="ggggg1">ارسال رایگان </div><div class="gggggg4">ناموجود</div></div>
+                    <footer>
+                        <div class="footer">
+                            <div class="top-footer">
+                            <div class="right-top">
+                                <div class="about">درباره ما</div>
+                                <div class="lorem-parsi">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی</div>
+                            </div>
+                            </div>
+                            <div class="left-top">
+                                <div class="follow">:ما را در شبکه های اجتماعی دنبال کنید</div>
+                                <div class="logo">
+                                    <a href=""><div class="z z1"><i><svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="m12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12c0-6.627-5.373-12-12-12zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"></path></g></svg></i></a></div>
+                                    <a href=""><div class="z z2"><i><svg fill="#000000" height="200px" width="200px" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M23,0H9C4,0,0,4,0,9v14c0,5,4,9,9,9h14c5,0,9-4,9-9V9C32,4,28,0,23,0z M12,25c0,0.6-0.4,1-1,1H7c-0.6,0-1-0.4-1-1V13 c0-0.6,0.4-1,1-1h4c0.6,0,1,0.4,1,1V25z M9,11c-1.7,0-3-1.3-3-3s1.3-3,3-3s3,1.3,3,3S10.7,11,9,11z M26,25c0,0.6-0.4,1-1,1h-3 c-0.6,0-1-0.4-1-1v-3.5v-1v-2c0-0.8-0.7-1.5-1.5-1.5S18,17.7,18,18.5v2v1V25c0,0.6-0.4,1-1,1h-3c-0.6,0-1-0.4-1-1V13 c0-0.6,0.4-1,1-1h4c0.3,0,0.5,0.1,0.7,0.3c0.6-0.2,1.2-0.3,1.8-0.3c3,0,5.5,2.5,5.5,5.5V25z"></path> </g></svg></i></a></div>
+                                    <a href=""><div class="z z3"></div><i><svg viewBox="0 0 960 960" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M599.256 326.893C638.207 324.995 644.199 388.816 601.453 383.223C565.997 382.224 561.503 327.892 599.256 326.893Z" fill="white"></path> <path d="M726.895 478.902C729.991 250.487 638.505 220.924 429.866 233.608C286.146 222.522 229.716 331.386 229.317 460.125C221.527 586.168 260.378 745.468 417.282 732.085C613.137 728.59 735.984 708.714 726.895 478.902ZM384.423 85.7931C608.743 64.9192 868.418 97.079 871.514 377.828C879.404 507.066 883.599 645.593 820.278 762.847C752.862 877.503 640.503 872.709 523.649 875.406C420.877 879.501 314.91 888.39 215.834 854.732C114.86 819.776 87.3942 743.571 89.5915 643.895C86.0959 558.103 82.6002 472.51 84.0984 386.617C89.0921 183.071 177.981 81.099 384.423 85.7931Z" fill="#000000"></path> <path d="M429.866 233.608C638.505 220.924 729.89 250.487 726.894 478.902C735.983 708.714 613.136 728.49 417.381 732.085C260.377 745.469 221.626 586.068 229.416 460.125C229.716 331.386 286.145 222.522 429.866 233.608ZM682.949 486.093C682.949 344.67 665.571 269.763 504.972 276.954C457.231 281.648 401.401 274.557 353.461 290.837C257.181 337.878 270.465 467.216 279.354 556.904C288.043 701.823 408.193 697.528 520.652 681.349C658.779 674.058 684.248 614.432 682.949 486.093Z" fill="white"></path> <path d="M495.188 393.309C393.515 388.116 362.155 555.606 473.715 560.101C578.584 557.604 594.664 423.172 495.188 393.309ZM473.915 354.857C649.495 342.972 638.709 602.448 473.116 600.65C316.212 595.856 330.894 368.84 473.915 354.857Z" fill="white"></path> <path d="M473.813 560.102C362.252 555.508 393.513 388.017 495.286 393.31C594.662 423.173 578.582 557.605 473.813 560.102Z" fill="#000000"></path> <path d="M504.973 276.955C665.572 269.664 683.05 344.67 682.95 486.093C684.149 614.433 658.781 674.058 520.653 681.349C408.194 697.529 288.044 701.823 279.355 556.905C270.466 467.117 257.282 337.878 353.462 290.837C401.402 274.558 457.233 281.649 504.973 276.955ZM473.213 600.65C638.706 602.448 649.592 342.972 474.012 354.857C330.89 368.84 316.209 595.856 473.213 600.65ZM601.452 383.222C644.199 388.815 638.206 325.094 599.255 326.892C561.502 327.891 565.997 382.223 601.452 383.222Z" fill="#000000"></path> </g></svg></i></a></div>
+                                    <a href=""><div class="z z4"></div><i><svg fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="7935ec95c421cee6d86eb22ecd12f847"> <path style="display: inline;" d="M459.186,151.787c0.203,4.501,0.305,9.023,0.305,13.565 c0,138.542-105.461,298.285-298.274,298.285c-59.209,0-114.322-17.357-160.716-47.104c8.212,0.973,16.546,1.47,25.012,1.47 c49.121,0,94.318-16.759,130.209-44.884c-45.887-0.841-84.596-31.154-97.938-72.804c6.408,1.227,12.968,1.886,19.73,1.886 c9.55,0,18.816-1.287,27.617-3.68c-47.955-9.633-84.1-52.001-84.1-102.795c0-0.446,0-0.882,0.011-1.318 c14.133,7.847,30.294,12.562,47.488,13.109c-28.134-18.796-46.637-50.885-46.637-87.262c0-19.212,5.16-37.218,14.193-52.7 c51.707,63.426,128.941,105.156,216.072,109.536c-1.784-7.675-2.718-15.674-2.718-23.896c0-57.891,46.941-104.832,104.832-104.832 c30.173,0,57.404,12.734,76.525,33.102c23.887-4.694,46.313-13.423,66.569-25.438c-7.827,24.485-24.434,45.025-46.089,58.002 c21.209-2.535,41.426-8.171,60.222-16.505C497.448,118.542,479.666,137.004,459.186,151.787z"> </path> </g> </g></svg></i></a></div>
+                                </div>
+                            </div>
+                            <div class="bottom-footer">
+                                <div class="copyright">2019 © کلیه حقوق محفوظ می باشد</div>
+                            </div>
+                        </div>
+                            
+                    </footer>
+     </body>
+</html>
